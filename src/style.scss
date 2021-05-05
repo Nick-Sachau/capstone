@@ -1,0 +1,10 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(15, 140, 223, 0.76), rgba(88, 188, 255, 0.76));
+}

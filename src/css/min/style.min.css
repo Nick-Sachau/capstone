@@ -1,1 +1,1 @@
-/* No CSS */
+*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}.container{min-height:100vh;background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(15,140,223,0.76)), to(rgba(88,188,255,0.76)));background-image:linear-gradient(to bottom, rgba(15,140,223,0.76), rgba(88,188,255,0.76))}
