@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar />
       <CurrentDay />
-      <Container class="nextDaysRow">
+      <Container className="nextDaysRow">
         <OtherDays />
         <OtherDays />
         <OtherDays />

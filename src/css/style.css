@@ -151,14 +151,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-  justify-content: center;
-  transition: 1.2s;
->>>>>>> 73bcdfe128fd3bbf7fef9ee63da094502c833972
 }
 
 #root .dopdownContainer .dropdownToggle {
