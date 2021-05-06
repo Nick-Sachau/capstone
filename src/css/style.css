@@ -24,6 +24,7 @@
 }
 
 #root nav {
+  font-family: 'Raleway', sans-serif;
   width: 100%;
 }
 
@@ -46,7 +47,7 @@
   border: none;
   width: 15%;
   border-bottom: 1px white solid;
-  margin-right: 5rem;
+  margin-right: 2rem;
   text-align: center;
   outline: none;
 }
@@ -57,6 +58,23 @@
 
 #root nav .navbar input[type=search]:focus {
   background-color: rgba(255, 255, 255, 0.07);
+}
+
+#root nav .navbar .left {
+  display: flex;
+  align-items: center;
+}
+
+#root nav .navbar .Logo {
+  font-size: 5rem;
+}
+
+#root nav .navbar .siteName {
+  padding-left: 2rem;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  align-items: center;
+  margin: 0;
 }
 
 #root .jumbotron {
@@ -70,13 +88,12 @@
   justify-content: center;
   align-items: center;
   transition: 0.7s;
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: rgba(255, 255, 255, 0.075);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #root .jumbotron:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #root .jumbotron .details {
@@ -132,7 +149,7 @@
 }
 
 #root .dopdownContainer .dropdownToggle {
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: rgba(255, 255, 255, 0.075);
   border: none;
   width: 65%;
   border-top-left-radius: 0px;
@@ -142,7 +159,7 @@
 }
 
 #root .dopdownContainer .dropdownToggle:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #root .dopdownContainer .dropdownToggle:focus {

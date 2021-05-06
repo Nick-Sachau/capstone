@@ -22,6 +22,8 @@
         color: white;
     }
     nav {
+        
+        font-family: 'Raleway', sans-serif;
         width: 100%;
 
         .navbar {
@@ -48,9 +50,23 @@
                 border: none;
                 width: 15%;
                 border-bottom: 1px white solid;
-                margin-right: 5rem;
+                margin-right: 2rem;
                 text-align: center;
                 outline: none;
+            }
+            .left{
+                display:flex;
+                align-items: center;
+            }
+            .Logo{
+                font-size: 5rem;
+            }
+            .siteName{
+                padding-left: 2rem;
+                font-weight: 600;
+                letter-spacing: .2rem;
+                align-items: center;
+                margin: 0;
             }
         }
     }
@@ -67,11 +83,11 @@
         justify-content: center;
         align-items: center;
         transition: 0.7s;
-        background-color: rgba(255, 255, 255, 0.07);
+        background-color: rgba(255, 255, 255, 0.075);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         &:hover {
-            background-color: rgba(255, 255, 255, 0.30);
-            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.15);
+            // cursor: pointer;
             
         }
 
@@ -135,7 +151,7 @@
         transition: 0.7s;
 
         .dropdownToggle {
-            background-color: rgba(255, 255, 255, 0.07);
+            background-color: rgba(255, 255, 255, 0.075);
             border: none;
             width: 65%;
             border-top-left-radius: 0px;
@@ -144,7 +160,7 @@
             border-bottom-right-radius: 2vw;
             &:hover{
                
-                background-color: rgba(255, 255, 255, 0.30);
+                background-color: rgba(255, 255, 255, 0.15);
             }
           
             &:focus{
@@ -191,8 +207,3 @@
 }
 
 //animations
-
-#animationSelector{
-    color: green;
-    background-color: green;
-}
