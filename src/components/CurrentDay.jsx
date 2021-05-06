@@ -56,14 +56,6 @@ const CurrentDay = () => {
                 </Dropdown.Menu>
             </Dropdown>
         </>
-        // <div className="currentDayContainer">
-        //     <div className="currentDay">
-        //         <h2>Weather</h2>
-        //     </div>
-        //     <div className="nextDay">
-        //         <HiChevronDown color="white"/>
-        //     </div>
-        // </div>
     )
 }
 

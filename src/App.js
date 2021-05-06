@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import React, { useState} from 'react'
 import CurrentDay from './components/CurrentDay';
 import Navbar from './components/Navbar';
+import OtherDays from './components/OtherDays';
+import { Container } from 'react-bootstrap'
 
 function App() {
 
@@ -10,6 +12,16 @@ function App() {
     <>
       <Navbar />
       <CurrentDay />
+      <Container class="nextDaysRow">
+        <OtherDays />
+        <OtherDays />
+        <OtherDays />
+        <OtherDays />
+        <OtherDays />
+        <OtherDays />
+        <OtherDays />
+        <OtherDays />
+      </Container>
     </>
   );
 }
