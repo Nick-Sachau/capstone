@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav>
             <ul className="navbar">
                 <img src={tempLogo} alt=""/>
-                <input type="search" name="Search" id="" placeholder="🔍 Search"/>
+                <input type="search" name="Search" id="" placeholder="   Search City, ZIP, or Location"/>
             </ul>
         </nav>
     )

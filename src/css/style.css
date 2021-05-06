@@ -2,26 +2,25 @@
 *, *::after, *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #root {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 147, 245, 0.76)), color-stop(rgba(36, 165, 250, 0.76)), to(rgba(149, 213, 255, 0.76)));
   background-image: linear-gradient(to bottom left, rgba(0, 147, 245, 0.76), rgba(36, 165, 250, 0.76), rgba(149, 213, 255, 0.76));
+}
+
+#root :focus::placeholder {
+  color: transparent;
+}
+
+#root ::placeholder {
+  color: white;
 }
 
 #root nav {
@@ -29,15 +28,9 @@
 }
 
 #root nav .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #root nav .navbar img {
@@ -45,10 +38,25 @@
 }
 
 #root nav .navbar input[type=search] {
+  transition: 0.7s;
+  padding-bottom: 2px;
+  font-family: 'Raleway', sans-serif;
   color: white;
+  background: none;
+  border: none;
+  width: 15%;
+  border-bottom: 1px white solid;
   margin-right: 5rem;
   text-align: center;
   outline: none;
+}
+
+#root nav .navbar input[type=search]:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+#root nav .navbar input[type=search]:focus {
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
 #root .jumbotron {
@@ -58,17 +66,10 @@
   border-top-right-radius: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
   background-color: rgba(255, 255, 255, 0.07);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -80,36 +81,19 @@
 
 #root .jumbotron .details {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #root .jumbotron .details .date {
   font-size: 1.9rem;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -122,15 +106,9 @@
   height: 2.6rem;
   font-size: 2rem;
   margin-left: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #root .jumbotron .details .weather .temp .deg {
@@ -148,12 +126,9 @@
 
 #root .dopdownContainer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  transition: 0.7s;
 }
 
 #root .dopdownContainer .dropdownToggle {
@@ -181,23 +156,23 @@
 
 #root .nextDaysRow {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 5rem;
 }
 
 #root .nextDaysRow .nextDays {
   padding: 0;
   width: 10%;
-  background-color: rgba(255, 255, 255, 0.137);
+  background-color: rgba(255, 255, 255, 0.07);
   border-radius: 1rem;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+#root .nextDaysRow .nextDays:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 #root .nextDaysRow .nextDays .icon {
@@ -208,3 +183,4 @@
   width: 100%;
   text-align: center;
 }
+/*# sourceMappingURL=style.css.map */
