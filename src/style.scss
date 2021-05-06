@@ -29,7 +29,8 @@
 
             input[type=search] {
                 color: white;
-                
+                background: none;
+                border: none;
                 margin-right: 5rem;
                 text-align: center;
                 outline: none;
@@ -135,7 +136,6 @@
         }
 
         .drowdownMenu {
-            
             width: 60%;
             text-align: center;
         }
@@ -145,22 +145,54 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         margin-top: 5rem;
 
         .nextDays {
             padding: 0;
-            width: 10%;
+            width: 130px;
             background-color: rgba(255, 255, 255, 0.137);
             border-radius: 1rem;
 
-            .icon {
-                text-align: center;
-            }
+            .top {
 
-            .Temp {
-                width: 100%;
-                text-align: center;
+
+                .Time {
+                    text-align: center;
+                }
+
+                .icon {
+                    text-align: center;
+                }
+            }
+            
+            .bottom {
+                display: flex;
+                margin: 0 auto;
+
+                .TempMax {
+                    color: rgb(255, 255, 255);
+                    width: 50%;
+                    text-align: center;
+
+                    .deg {
+                        width: 20%;
+                        transform: scale(3);
+                        // margin-left: -.1rem;
+                    }
+                }
+                .TempMin {
+                    color: rgba(255, 255, 255, 0.562);
+                    width: 50%;
+                    text-align: center;
+
+                    .deg {
+                        width: 20%;
+                        transform: scale(3);
+                        // margin-left: -.1rem;
+                    }
+                }
             }
         }
     }

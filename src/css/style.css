@@ -46,6 +46,8 @@
 
 #root nav .navbar input[type=search] {
   color: white;
+  background: none;
+  border: none;
   margin-right: 5rem;
   text-align: center;
   outline: none;
@@ -154,6 +156,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
 }
 
 #root .dopdownContainer .dropdownToggle {
@@ -171,7 +175,8 @@
 }
 
 #root .dopdownContainer .dropdownToggle:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #root .dopdownContainer .drowdownMenu {
@@ -187,6 +192,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -195,16 +202,46 @@
 
 #root .nextDaysRow .nextDays {
   padding: 0;
-  width: 10%;
+  width: 130px;
   background-color: rgba(255, 255, 255, 0.137);
   border-radius: 1rem;
 }
 
-#root .nextDaysRow .nextDays .icon {
+#root .nextDaysRow .nextDays .top .Time {
   text-align: center;
 }
 
-#root .nextDaysRow .nextDays .Temp {
-  width: 100%;
+#root .nextDaysRow .nextDays .top .icon {
   text-align: center;
+}
+
+#root .nextDaysRow .nextDays .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#root .nextDaysRow .nextDays .bottom .TempMax {
+  color: white;
+  width: 50%;
+  text-align: center;
+}
+
+#root .nextDaysRow .nextDays .bottom .TempMax .deg {
+  width: 20%;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+#root .nextDaysRow .nextDays .bottom .TempMin {
+  color: rgba(255, 255, 255, 0.562);
+  width: 50%;
+  text-align: center;
+}
+
+#root .nextDaysRow .nextDays .bottom .TempMin .deg {
+  width: 20%;
+  -webkit-transform: scale(3);
+          transform: scale(3);
 }
