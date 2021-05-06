@@ -45,6 +45,7 @@
 }
 
 #root nav .navbar input[type=search] {
+  color: white;
   margin-right: 5rem;
   text-align: center;
   outline: none;
@@ -53,7 +54,8 @@
 #root .jumbotron {
   font-family: 'Raleway', sans-serif;
   width: 65%;
-  border-radius: 2vw;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
   display: -webkit-box;
@@ -67,10 +69,12 @@
           align-items: center;
   -webkit-transition: 1.2s;
   transition: 1.2s;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #root .jumbotron:hover {
-  background-color: rgba(255, 255, 255, 0.151);
+  background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
@@ -147,13 +151,32 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  justify-content: center;
+  transition: 1.2s;
+>>>>>>> 73bcdfe128fd3bbf7fef9ee63da094502c833972
 }
 
 #root .dopdownContainer .dropdownToggle {
-  width: 60%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: none;
+  width: 65%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+
+#root .dopdownContainer .dropdownToggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#root .dopdownContainer .dropdownToggle:focus {
+  box-shadow: none;
 }
 
 #root .dopdownContainer .drowdownMenu {
