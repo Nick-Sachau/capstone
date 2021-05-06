@@ -6,18 +6,25 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 const CurrentDay = () => {
-    const now = new Date()
+    const now = new Date();
     const date = now.getDate();
-    const month = now.getMonth() + 1;
-    let months = ['January', 'Febuary']
-    let day = now.getDay()
-    let days = ['SUN', 'MON', 'TUE', 'WED', 'THURS', 'FRI', 'SAT']
+    let month = now.getMonth();
+    let months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    let day = now.getDay();
+    let days = ['SUN', 'MON', 'TUE', 'WED', 'THURS', 'FRI', 'SAT'];
+    const year = now.getFullYear();
+
     for(const i in days) {
         if(day == i) {
             day = days[i]
         }
     }
-    console.log(day)
+
+    for(const i in months) {
+        if(month == i) {
+            month = months[i]
+        }
+    }
 
     return (
         <>
@@ -26,7 +33,7 @@ const CurrentDay = () => {
                     <div className="date">
                         <div className="day">{month + " " + date}</div>
                         <div className="weekDay">{day}</div>
-                        <div className="year">2021</div>
+                        <div className="year">{year}</div>
                     </div>
                     <div className="weather">
                         <div className="temp">{Math.round(weather.current.temp)}<WiDegrees className="deg" /></div>
