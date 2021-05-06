@@ -3,7 +3,7 @@ import Weather from '../weather.json'
 
 const OtherDays = () => {
     return (
-        <Container className="nextDays">
+        <Container className="nextDays" id="animationSelector">
             <div className="icon"><img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"/></div>
             <div className="Temp"><p>Temp: {Math.round(Weather.current.temp)}</p></div>
         </Container>
