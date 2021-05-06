@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 #root {
     overflow: hidden;
     display: flex;
@@ -35,6 +37,7 @@
     
 
     .jumbotron {
+        font-family: 'Raleway', sans-serif;
         width: 65%;
         border-radius: 2vw;
         padding-top: 5vh;
