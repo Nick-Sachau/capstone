@@ -6,14 +6,26 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 const CurrentDay = () => {
+    const now = new Date()
+    const date = now.getDate();
+    const month = now.getMonth() + 1;
+    let months = ['January', 'Febuary']
+    let day = now.getDay()
+    let days = ['SUN', 'MON', 'TUE', 'WED', 'THURS', 'FRI', 'SAT']
+    for(const i in days) {
+        if(day == i) {
+            day = days[i]
+        }
+    }
+    console.log(day)
 
     return (
         <>
             <Jumbotron>
                 <div className="details">
                     <div className="date">
-                        <div className="day">May 5th</div>
-                        <div className="weekDay">WED</div>
+                        <div className="day">{month + " " + date}</div>
+                        <div className="weekDay">{day}</div>
                         <div className="year">2021</div>
                     </div>
                     <div className="weather">
@@ -31,9 +43,9 @@ const CurrentDay = () => {
                 <Dropdown.Toggle variant="secondary" className="dropdownToggle"></Dropdown.Toggle>
                 <Dropdown.Menu className="drowdownMenu">
                     <Dropdown.Item>Testing</Dropdown.Item>
-                    <Dropdown.Item>Fuck</Dropdown.Item>
-                    <Dropdown.Item>You</Dropdown.Item>
-                    <Dropdown.Item>jimmy</Dropdown.Item>
+                    <Dropdown.Item>Connor</Dropdown.Item>
+                    <Dropdown.Item>Jaxson</Dropdown.Item>
+                    <Dropdown.Item>Kevin</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
         </>

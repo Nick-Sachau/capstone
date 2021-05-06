@@ -50,6 +50,8 @@
 }
 
 #root .jumbotron {
+  width: 65%;
+  border-radius: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
   display: -webkit-box;
@@ -67,6 +69,7 @@
 
 #root .jumbotron:hover {
   background-color: rgba(255, 255, 255, 0.151);
+  cursor: pointer;
 }
 
 #root .jumbotron .details {
@@ -86,7 +89,7 @@
 }
 
 #root .jumbotron .details .date {
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +136,10 @@
   width: 2rem;
 }
 
+#root .jumbotron .content {
+  width: 50%;
+}
+
 #root .dopdownContainer {
   width: 100%;
   display: -webkit-box;
@@ -151,4 +158,3 @@
   width: 60%;
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
