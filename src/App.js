@@ -1,13 +1,14 @@
 import './css/style.css';
-import weather from './weather.json';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import React, { useState} from 'react'
+import CurrentDay from './components/CurrentDay';
 
 function App() {
-  console.log(weather)
 
   return (
-    <div className="container">
-      
-    </div>
+    <>
+      <CurrentDay />
+    </>
   );
 }
 

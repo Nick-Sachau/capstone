@@ -4,7 +4,99 @@
     box-sizing: border-box;
 }
 
-.container {
+#root {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(15, 140, 223, 0.76), rgba(88, 188, 255, 0.76));
+    background-image: linear-gradient(to bottom left, rgba(0, 147, 245, 0.76), rgba(36, 165, 250, 0.76), rgba(149, 213, 255, 0.76));
+
+    .jumbotron {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1.2s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.151);
+        }
+
+        .details {
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+
+            .date {
+                font-size: 1.3rem;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        
+            .weather {
+                text-align: center;
+        
+    
+                .temp {
+                    width: 5rem;
+                    height: 2.6rem;
+                    font-size: 2rem;
+                    margin-left: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .deg {
+                        font-size: 3.7rem;
+                        margin-left: -1rem;
+                    }
+                }
+
+                .weather {
+                    img {
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .dopdownContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .dropdownToggle {
+            width: 60%;
+        }
+
+        .drowdownMenu {
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+    .extras {
+        width: 100%;
+        font-size: 2.5rem;
+        color: white;
+        transition: .8s;
+
+        &:hover {
+            width: 143%;
+            background-color: rgba(255, 255, 255, 0.151);
+            transform: scale(.7);
+            opacity: .4;
+        }
+    }
 }
