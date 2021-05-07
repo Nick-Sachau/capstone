@@ -197,31 +197,6 @@
 
             &:hover {
                 background-color: rgba(255, 255, 255, 0.3);
-                // -webkit-transform: rotate(360deg);
-                // -moz-transform: rotate(360deg);
-                // -o-transform: rotate(360deg);
-                // -ms-transform: rotate(360deg);
-                // transform: rotate(360deg);
-                // left: calc(100% - 102px);
-                // background-color: yellow;
-
-
-                // position: absolute;
-                // left: 120px;
-                // top: 100px;
-
-                // background-color : blue;
-
-                // -webkit-transition: 1s ease-in-out;
-                // -moz-transition: 1s ease-in-out;
-                // -o-transition: 1s ease-in-out;
-                // transition: 1s ease-in-out;
-
-                // transform: translate(100px, 200px);
-                // transform: translate(100px, 50%);
-                // transform: translate(30%, 200px);
-                // transform: translate(80%, -50%);
-                // float: right;
                 -webkit-transform: translate(0,0);
                 -moz-transform: translate(0,0);
                 -o-transform: translate(0,0);
@@ -265,5 +240,3 @@
         }
     }
 }
-
-//animations
