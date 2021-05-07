@@ -1,8 +1,11 @@
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
+import { Collapse } from 'react-bootstrap';
 import weather from '../weather.json'
 import { WiDegrees } from 'react-icons/wi'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import Dropdown from 'react-bootstrap/Dropdown'
+// import Dropdown from 'react-bootstrap/Dropdown'
+import { AiFillCaretDown } from 'react-icons/ai'
+import { Button } from 'react-bootstrap'
 
 const CurrentDay = () => {
     const now = new Date();
@@ -24,6 +27,9 @@ const CurrentDay = () => {
             month = months[i]
         }
     }
+    
+    const [open, setOpen] = useState(false)
+    
 
     return (
         <>
@@ -43,17 +49,19 @@ const CurrentDay = () => {
                 <div className="content">
                     <p>This is filler content. Deserunt magna pariatur non nulla culpa qui irure elit aliqua mollit voluptate nulla officia fugiat. Non esse irure ad aute cupidatat officia ad sint quis aliqua pariatur quis dolore. Sunt velit veniam consectetur labore consequat laboris.</p>
                 </div>
+                
             </Jumbotron>
+            <Collapse in={open}>
+                    <div id="collapse-text">
+                        This is filler text, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad placeat nostrum reiciendis optio aliquam culpa sequi maiores veritatis aperiam reprehenderit impedit dolores corrupti distinctio, error molestias amet provident enim labore?
+                    </div>
+                </Collapse>
             
-            <Dropdown className="dopdownContainer">
-                <Dropdown.Toggle variant="secondary" className="dropdownToggle"></Dropdown.Toggle>
-                <Dropdown.Menu className="drowdownMenu">
-                    <Dropdown.Item>Testing</Dropdown.Item>
-                    <Dropdown.Item>Connor</Dropdown.Item>
-                    <Dropdown.Item>Jaxson</Dropdown.Item>
-                    <Dropdown.Item>Kevin</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
+            <Button
+            onClick={() => setOpen(!open)}
+            aria-controls="example-collapse=text"
+            aria-expanded={open}
+            ><AiFillCaretDown /></Button>
         </>
     )
 }

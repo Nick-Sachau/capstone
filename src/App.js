@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <CurrentDay />
+      <CurrentDay  />
       <Container className="nextDaysRow">
         {
           data.daily.map((day) => (
