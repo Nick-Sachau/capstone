@@ -14,6 +14,14 @@
     color: white;
     min-height: 100vh;
     background-image: linear-gradient(to bottom left, rgba(0, 147, 245, 0.76), rgba(36, 165, 250, 0.76), rgba(149, 213, 255, 0.76));
+    
+    :focus::placeholder{
+        color: transparent;
+    }
+
+    ::placeholder{
+        color: white;
+    }
 
     nav {
         width: 100%;
@@ -28,12 +36,25 @@
             }
 
             input[type=search] {
+                transition: 0.7s;
+                padding-bottom: 2px;
+                font-family: 'Raleway', sans-serif;
                 color: white;
                 background: none;
                 border: none;
+                width: 18%;
+                border-bottom: 1px white solid;
                 margin-right: 5rem;
                 text-align: center;
                 outline: none;
+                
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.07);
+                }
+
+                &:focus{
+                    background-color: rgba(255, 255, 255, 0.07);
+                }
             }
         }
     }
@@ -49,9 +70,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 1.2s;
+        transition: 0.7s;
         background-color: rgba(255, 255, 255, 0.07);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
         &:hover {
             background-color: rgba(255, 255, 255, 0.30);
             cursor: pointer;
@@ -111,11 +133,10 @@
     }
 
     .dopdownContainer {
-        
         width: 100%;
         display: flex;
         justify-content: center;
-        transition: 1.2s;
+        transition: 0.7s;
 
         .dropdownToggle {
             background-color: rgba(255, 255, 255, 0.07);
@@ -125,8 +146,8 @@
             border-top-right-radius: 0px;
             border-bottom-left-radius: 2vw;
             border-bottom-right-radius: 2vw;
+
             &:hover{
-               
                 background-color: rgba(255, 255, 255, 0.30);
             }
           
@@ -151,20 +172,17 @@
 
         .nextDays {
             padding: 0;
-            width: 130px;
-            background-color: rgba(255, 255, 255, 0.137);
+            width: 10%;
+            background-color: rgba(255, 255, 255, 0.07);
             border-radius: 1rem;
+            transition: 0.7s;
+            cursor: pointer;
 
-            .top {
-
-
-                .Time {
-                    text-align: center;
-                }
-
-                .icon {
-                    text-align: center;
-                }
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.30);
+            }
+            .icon {
+                text-align: center;
             }
             
             .bottom {
@@ -179,7 +197,6 @@
                     .deg {
                         width: 20%;
                         transform: scale(3);
-                        // margin-left: -.1rem;
                     }
                 }
                 .TempMin {
@@ -190,11 +207,17 @@
                     .deg {
                         width: 20%;
                         transform: scale(3);
-                        // margin-left: -.1rem;
                     }
                 }
             }
         }
     }
     
+}
+
+//animations
+
+#animationSelector{
+    color: green;
+    background-color: green;
 }

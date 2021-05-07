@@ -24,6 +24,38 @@
   background-image: linear-gradient(to bottom left, rgba(0, 147, 245, 0.76), rgba(36, 165, 250, 0.76), rgba(149, 213, 255, 0.76));
 }
 
+#root :focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#root :focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+#root :focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+#root :focus::placeholder {
+  color: transparent;
+}
+
+#root ::-webkit-input-placeholder {
+  color: white;
+}
+
+#root :-ms-input-placeholder {
+  color: white;
+}
+
+#root ::-ms-input-placeholder {
+  color: white;
+}
+
+#root ::placeholder {
+  color: white;
+}
+
 #root nav {
   width: 100%;
 }
@@ -45,12 +77,26 @@
 }
 
 #root nav .navbar input[type=search] {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  padding-bottom: 2px;
+  font-family: 'Raleway', sans-serif;
   color: white;
   background: none;
   border: none;
+  width: 18%;
+  border-bottom: 1px white solid;
   margin-right: 5rem;
   text-align: center;
   outline: none;
+}
+
+#root nav .navbar input[type=search]:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+#root nav .navbar input[type=search]:focus {
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
 #root .jumbotron {
@@ -69,8 +115,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   background-color: rgba(255, 255, 255, 0.07);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -156,8 +202,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 #root .dopdownContainer .dropdownToggle {
@@ -202,16 +248,19 @@
 
 #root .nextDaysRow .nextDays {
   padding: 0;
-  width: 130px;
-  background-color: rgba(255, 255, 255, 0.137);
+  width: 10%;
+  background-color: rgba(255, 255, 255, 0.07);
   border-radius: 1rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  cursor: pointer;
 }
 
-#root .nextDaysRow .nextDays .top .Time {
-  text-align: center;
+#root .nextDaysRow .nextDays:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-#root .nextDaysRow .nextDays .top .icon {
+#root .nextDaysRow .nextDays .icon {
   text-align: center;
 }
 
@@ -244,4 +293,9 @@
   width: 20%;
   -webkit-transform: scale(3);
           transform: scale(3);
+}
+
+#animationSelector {
+  color: green;
+  background-color: green;
 }

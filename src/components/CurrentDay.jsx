@@ -1,7 +1,6 @@
 // import React, { useState } from 'react'
 import weather from '../weather.json'
 import { WiDegrees } from 'react-icons/wi'
-import { GoChevronDown } from 'react-icons/go'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Dropdown from 'react-bootstrap/Dropdown'
 

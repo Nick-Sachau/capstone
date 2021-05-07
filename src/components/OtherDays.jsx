@@ -1,14 +1,19 @@
 import { Container } from 'react-bootstrap'
 import Weather from '../weather.json'
 import { WiDegrees } from 'react-icons/wi'
+import React, { useState } from 'react'
 
-const OtherDays = () => {
-    console.log(Weather.daily)
+const OtherDays = ({ day }) => {
+    const [test, setTest] = useState('')
+    let dt = new Date(day.dt)
+    console.log(dt)
+    let date = dt.getDay()
+    console.log(date)
 
     return (
-        <Container className="nextDays">
+        <Container className="nextDays" onClick={() => {setTest(test + 1)}}>
             <div className="top">
-                <div className="Time">2 PM</div>
+                <div className="Time">{day.temp.morn}</div>
                 <div className="icon"><img src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"/></div>
             </div>
             <div className="bottom">
