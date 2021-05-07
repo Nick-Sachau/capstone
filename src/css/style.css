@@ -80,11 +80,40 @@
   margin: 0;
 }
 
+#root #collapse-text {
+  font-family: "Raleway", sans-serif;
+  width: 65%;
+  background-color: rgba(255, 255, 255, 0.15);
+  user-select: none;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: center;
+}
+
+#root .collapseButton {
+  width: 65%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#root .collapseButton:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#root .collapseButton:focus {
+  box-shadow: none;
+}
+
 #root .jumbotron {
   font-family: "Raleway", sans-serif;
   width: 65%;
-  border-top-left-radius: 2vw;
-  border-top-right-radius: 2vw;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   padding-top: 5vh;
   padding-bottom: 5vh;
   display: flex;
@@ -94,7 +123,6 @@
   cursor: default;
   transition: 0.7s;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #root .jumbotron .details {
@@ -140,36 +168,6 @@
 
 #root .jumbotron .content {
   width: 50%;
-}
-
-#root .dopdownContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  transition: 0.7s;
-}
-
-#root .dopdownContainer .dropdownToggle {
-  background-color: rgba(255, 255, 255, 0.15);
-  border: none;
-  width: 65%;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 2vw;
-  border-bottom-right-radius: 2vw;
-}
-
-#root .dopdownContainer .dropdownToggle:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-#root .dopdownContainer .dropdownToggle:focus {
-  box-shadow: none;
-}
-
-#root .dopdownContainer .drowdownMenu {
-  width: 60%;
-  text-align: center;
 }
 
 #root .nextDaysRow {

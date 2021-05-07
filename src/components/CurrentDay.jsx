@@ -5,6 +5,7 @@ import { WiDegrees } from 'react-icons/wi'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 // import Dropdown from 'react-bootstrap/Dropdown'
 import { AiFillCaretDown } from 'react-icons/ai'
+import { AiFillCaretUp } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
 
 const CurrentDay = () => {
@@ -29,6 +30,7 @@ const CurrentDay = () => {
     }
     
     const [open, setOpen] = useState(false)
+    const [direction, setDirection] = useState(false)
     
 
     return (
@@ -54,14 +56,19 @@ const CurrentDay = () => {
             <Collapse in={open}>
                     <div id="collapse-text">
                         This is filler text, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad placeat nostrum reiciendis optio aliquam culpa sequi maiores veritatis aperiam reprehenderit impedit dolores corrupti distinctio, error molestias amet provident enim labore?
+                        <br></br>
+                        <br></br>
+                        
                     </div>
+                    
                 </Collapse>
             
             <Button
             onClick={() => setOpen(!open)}
             aria-controls="example-collapse=text"
             aria-expanded={open}
-            ><AiFillCaretDown /></Button>
+            className="collapseButton"
+            >{!open ? <AiFillCaretDown /> : <AiFillCaretUp />}</Button>
         </>
     )
 }
