@@ -197,7 +197,11 @@
   transform: translate(0, -2em);
 }
 
-#root .nextDaysRow .nextDays .icon {
+#root .nextDaysRow .nextDays .top {
+  text-align: center;
+}
+
+#root .nextDaysRow .nextDays .top .icon {
   text-align: center;
 }
 
