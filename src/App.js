@@ -37,11 +37,14 @@ function App() {
 
   console.log(day)
 
+  // updateJumbo();
+  // <updateJumbo />
+
   return (
     <>
       <Navbar />
       <CurrentDay date={date} day={day} month={month} year={year}/>
-      <Container className="nextDaysRow">
+      <Container className="nextDaysRow"> 
         {
           data.daily.map((day) => (
             key++,

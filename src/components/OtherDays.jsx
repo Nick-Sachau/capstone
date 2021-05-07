@@ -11,6 +11,8 @@ const OtherDays = ({ day }) => {
     }
 
     let days = ['SUN', 'MON', 'TUE', 'WED', 'THURS', 'FRI', 'SAT'];
+
+    // useState(this.dt)
     
     return (
         <Container className="nextDays" onClick={() => {setTest(test + 1); date()}}>
