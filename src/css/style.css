@@ -4,54 +4,21 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #root {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 147, 245, 0.76)), color-stop(rgba(36, 165, 250, 0.76)), to(rgba(149, 213, 255, 0.76)));
   background-image: linear-gradient(to bottom left, rgba(0, 147, 245, 0.76), rgba(36, 165, 250, 0.76), rgba(149, 213, 255, 0.76));
-}
-
-#root :focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-#root :focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-#root :focus::-ms-input-placeholder {
-  color: transparent;
 }
 
 #root :focus::placeholder {
   color: transparent;
-}
-
-#root ::-webkit-input-placeholder {
-  color: white;
-}
-
-#root :-ms-input-placeholder {
-  color: white;
-}
-
-#root ::-ms-input-placeholder {
-  color: white;
 }
 
 #root ::placeholder {
@@ -64,15 +31,9 @@
 }
 
 #root nav .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #root nav .navbar img {
@@ -80,7 +41,6 @@
 }
 
 #root nav .navbar input[type=search] {
-  -webkit-transition: 0.7s;
   transition: 0.7s;
   padding-bottom: 2px;
   font-family: "Raleway", sans-serif;
@@ -103,12 +63,8 @@
 }
 
 #root nav .navbar .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #root nav .navbar .Logo {
@@ -116,12 +72,11 @@
 }
 
 #root nav .navbar .siteName {
+  user-select: none;
   padding-left: 2rem;
   font-weight: 600;
   letter-spacing: .2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0;
 }
 
@@ -132,58 +87,31 @@
   border-top-right-radius: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.7s;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: default;
   transition: 0.7s;
-  background-color: rgba(255, 255, 255, 0.075);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-#root .jumbotron:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
 }
 
 #root .jumbotron .details {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #root .jumbotron .details .date {
   font-size: 1.9rem;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -196,15 +124,9 @@
   height: 2.6rem;
   font-size: 2rem;
   margin-left: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #root .jumbotron .details .weather .temp .deg {
@@ -222,18 +144,13 @@
 
 #root .dopdownContainer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 0.7s;
+  justify-content: center;
   transition: 0.7s;
 }
 
 #root .dopdownContainer .dropdownToggle {
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: rgba(255, 255, 255, 0.15);
   border: none;
   width: 65%;
   border-top-left-radius: 0px;
@@ -247,8 +164,7 @@
 }
 
 #root .dopdownContainer .dropdownToggle:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 #root .dopdownContainer .drowdownMenu {
@@ -258,17 +174,10 @@
 
 #root .nextDaysRow {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   margin-top: 5rem;
   margin-left: 0;
   margin-right: 0;
@@ -279,14 +188,12 @@
   width: 10%;
   background-color: rgba(255, 255, 255, 0.137);
   border-radius: 1rem;
-  -webkit-transition: 0.7s;
   transition: 0.7s;
   cursor: pointer;
 }
 
 #root .nextDaysRow .nextDays:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  -webkit-transform: translate(0, 0);
   transform: translate(0, -2em);
 }
 
@@ -295,8 +202,6 @@
 }
 
 #root .nextDaysRow .nextDays .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
 }
@@ -309,8 +214,7 @@
 
 #root .nextDaysRow .nextDays .bottom .TempMax .deg {
   width: 20%;
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  transform: scale(3);
 }
 
 #root .nextDaysRow .nextDays .bottom .TempMin {
@@ -321,6 +225,6 @@
 
 #root .nextDaysRow .nextDays .bottom .TempMin .deg {
   width: 20%;
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  transform: scale(3);
 }
+/*# sourceMappingURL=style.css.map */

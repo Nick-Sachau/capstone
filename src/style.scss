@@ -71,6 +71,7 @@
             }
 
             .siteName{
+                user-select: none;
                 padding-left: 2rem;
                 font-weight: 600;
                 letter-spacing: .2rem;
@@ -90,14 +91,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        user-select: none;
+        cursor: default;
         transition: 0.7s;
-        background-color: rgba(255, 255, 255, 0.075);
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-            cursor: pointer;
-        }
+        
 
         .details {
             width: 40%;
@@ -154,7 +154,7 @@
         transition: 0.7s;
 
         .dropdownToggle {
-            background-color: rgba(255, 255, 255, 0.075);
+            background-color: rgba(255, 255, 255, 0.15);
             border: none;
             width: 65%;
             border-top-left-radius: 0px;
