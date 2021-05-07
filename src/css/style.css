@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -57,6 +59,7 @@
 }
 
 #root nav {
+  font-family: 'Raleway', sans-serif;
   width: 100%;
 }
 
@@ -80,13 +83,13 @@
   -webkit-transition: 0.7s;
   transition: 0.7s;
   padding-bottom: 2px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   background: none;
   border: none;
   width: 18%;
   border-bottom: 1px white solid;
-  margin-right: 5rem;
+  margin-right: 2rem;
   text-align: center;
   outline: none;
 }
@@ -99,8 +102,31 @@
   background-color: rgba(255, 255, 255, 0.07);
 }
 
+#root nav .navbar .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root nav .navbar .Logo {
+  font-size: 5rem;
+}
+
+#root nav .navbar .siteName {
+  padding-left: 2rem;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
 #root .jumbotron {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   width: 65%;
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
@@ -117,7 +143,7 @@
           align-items: center;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: rgba(255, 255, 255, 0.075);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -207,7 +233,7 @@
 }
 
 #root .dopdownContainer .dropdownToggle {
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: rgba(255, 255, 255, 0.075);
   border: none;
   width: 65%;
   border-top-left-radius: 0px;
@@ -231,7 +257,7 @@
 }
 
 #root .nextDaysRow {
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,12 +270,14 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #root .nextDaysRow .nextDays {
   padding: 0;
   width: 10%;
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: rgba(255, 255, 255, 0.137);
   border-radius: 1rem;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -258,6 +286,8 @@
 
 #root .nextDaysRow .nextDays:hover {
   background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, -2em);
 }
 
 #root .nextDaysRow .nextDays .icon {
@@ -293,9 +323,4 @@
   width: 20%;
   -webkit-transform: scale(3);
           transform: scale(3);
-}
-
-#animationSelector {
-  color: green;
-  background-color: green;
 }
