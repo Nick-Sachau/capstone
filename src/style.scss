@@ -228,9 +228,13 @@
                 -ms-transform: translate(0,0);
                 transform: translate(0, -2em);
             }
-
-            .icon {
+            
+            .top {
                 text-align: center;
+
+                .icon {
+                    text-align: center;
+                }
             }
             
             .bottom {

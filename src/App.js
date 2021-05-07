@@ -9,7 +9,7 @@ import Weather from './weather.json'
 
 let data = Weather
 // for(const day in data.daily){
-//   data.daily[day].dt = new Date(data.daily[day].dt)
+//   data.daily[day].dt = Date(data.daily[day].dt)
 // }
 
 
@@ -20,12 +20,12 @@ function App() {
       <Navbar />
       <CurrentDay />
       <Container className="nextDaysRow">
-        {/* {
+        {
           data.daily.map((day) => (
             <OtherDays day={day}/>
           ))
-        } */}
-        <OtherDays day={data.daily[7]} />
+        }
+        {/* <OtherDays day={day}/> */}
       </Container>
     </>
   );
