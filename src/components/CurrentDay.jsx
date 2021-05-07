@@ -36,7 +36,7 @@ const CurrentDay = () => {
                     </div>
                     <div className="weather">
                         <div className="temp">{Math.round(weather.current.temp)}<WiDegrees className="deg" /></div>
-                        <div className="weather">{weather.current.weather[0].main} <img className="icon" src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"/> </div>
+                        <div className="weather">{weather.current.weather[0].description} <img className="icon" src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"/> </div>
                         <div className="humidity">Humidity: {weather.current.humidity}%</div>
                     </div>
                 </div>

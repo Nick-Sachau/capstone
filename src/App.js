@@ -12,6 +12,7 @@ let data = Weather
 //   data.daily[day].dt = Date(data.daily[day].dt)
 // }
 
+let key = 0;
 
 function App() {
 
@@ -22,10 +23,10 @@ function App() {
       <Container className="nextDaysRow">
         {
           data.daily.map((day) => (
-            <OtherDays day={day}/>
+            key++,
+            <OtherDays day={day} key={key}/>
           ))
         }
-        {/* <OtherDays day={day}/> */}
       </Container>
     </>
   );
