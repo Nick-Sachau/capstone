@@ -28,7 +28,7 @@ const CurrentDay = ({ day, month, year, date }) => {
                     </div>
                 </div>
                 <div className="content">
-                    <p>This is filler content. Deserunt magna pariatur non nulla culpa qui irure elit aliqua mollit voluptate nulla officia fugiat. Non esse irure ad aute cupidatat officia ad sint quis aliqua pariatur quis dolore. Sunt velit veniam consectetur labore consequat laboris.</p>
+                    <p onClick={() => {console.log(weather)}}>This is filler content. Deserunt magna pariatur non nulla culpa qui irure elit aliqua mollit voluptate nulla officia fugiat. Non esse irure ad aute cupidatat officia ad sint quis aliqua pariatur quis dolore. Sunt velit veniam consectetur labore consequat laboris.</p>
                 </div>
                 
             </Jumbotron>

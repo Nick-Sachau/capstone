@@ -3,6 +3,7 @@ import Weather from '../weather.json'
 import { WiDegrees } from 'react-icons/wi'
 import React, { useState } from 'react'
 
+
 const OtherDays = ({ day }) => {
     const [test, setTest] = useState('')
 
@@ -15,7 +16,7 @@ const OtherDays = ({ day }) => {
     // useState(this.dt)
     
     return (
-        <Container className="nextDays" onClick={() => {setTest(test + 1); date()}}>
+        <Container className="nextDays" onClick={() => {console.log(day.moonrise)}}>
             <div className="top">
                 <div className="Time">{day.dt}</div>
                 <div className="icon"><img src={"http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png"} alt="weather icon"/></div>
