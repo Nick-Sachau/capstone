@@ -8,30 +8,7 @@ import { AiFillCaretDown } from 'react-icons/ai'
 import { AiFillCaretUp } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
 
-const CurrentDay = () => {
-    const now = new Date();
-    const date = now.getDate();
-    let month = now.getMonth();
-    let months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    let day = now.getDay();
-    let days = ['SUN', 'MON', 'TUE', 'WED', 'THURS', 'FRI', 'SAT'];
-    const year = now.getFullYear();
-
-    for(const i in days) {
-        if(day == i) {
-            day = days[i]
-        }
-    }
-
-    for(const i in months) {
-        if(month == i) {
-            month = months[i]
-        }
-    }
-    
-    const [open, setOpen] = useState(false)
-    const [direction, setDirection] = useState(false)
-    
+const CurrentDay = ({ day, month, year, date }) => {
 
     return (
         <>
