@@ -10,6 +10,8 @@ import { Button } from 'react-bootstrap'
 
 const CurrentDay = ({ day, month, year, date }) => {
 
+    const [open, setOpen] = useState(false)
+
     return (
         <>
             <Jumbotron>
