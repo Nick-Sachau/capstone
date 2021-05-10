@@ -17,7 +17,7 @@ const OtherDays = ({ day }) => {
     // useState(this.dt)
     
     return (
-        <Container className="nextDays" onClick={() => {console.log(key)}}>
+        <Container className="nextDays" onClick={() => {console.log()}}>
             <div className="top">
                 <div className="Time">{day.dt}</div>
                 <div className="icon"><img src={"http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png"} alt="weather icon"/></div>
@@ -29,5 +29,7 @@ const OtherDays = ({ day }) => {
         </Container>
     )
 }
+
+
 
 export default OtherDays

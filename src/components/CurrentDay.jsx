@@ -35,7 +35,7 @@ const CurrentDay = ({ day, month, year, date }) => {
             </Jumbotron>
             <Collapse in={open}>
                     <div id="collapse-text">
-                        This is filler text, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad placeat nostrum reiciendis optio aliquam culpa sequi maiores veritatis aperiam reprehenderit impedit dolores corrupti distinctio, error molestias amet provident enim labore?
+                        
                         <br></br>
                         <br></br>
                         
