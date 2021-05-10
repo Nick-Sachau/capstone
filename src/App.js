@@ -35,6 +35,12 @@ function App() {
       }
   }
 
+  const [jumbotron, setJumbotron] = useState('')
+
+  const activeDay = () => {
+    
+  }
+
   console.log(day)
 
   // updateJumbo();
