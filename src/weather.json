@@ -1381,6 +1381,9 @@
     "daily": [
       {
         "dt": "Monday",
+        "month": "May",
+        "year": "2021",
+        "day": "10th",
         "sunrise": 1619959135,
         "sunset": 1620007935,
         "moonrise": 1619941320,
@@ -1420,6 +1423,9 @@
       },
       {
         "dt": "Tuesday",
+        "month": "May",
+        "year": "2021",
+        "day": "11th",
         "sunrise": 1620045478,
         "sunset": 1620094381,
         "moonrise": 1620030720,
@@ -1459,6 +1465,9 @@
       },
       {
         "dt": "Wednesday",
+        "month": "May",
+        "year": "2021",
+        "day": "12th",
         "sunrise": 1620131822,
         "sunset": 1620180828,
         "moonrise": 1620119520,
@@ -1498,6 +1507,9 @@
       },
       {
         "dt": "Thursday",
+        "month": "May",
+        "year": "2021",
+        "day": "13th",
         "sunrise": 1620218167,
         "sunset": 1620267274,
         "moonrise": 1620208020,
@@ -1537,6 +1549,9 @@
       },
       {
         "dt": "Friday",
+        "month": "May",
+        "year": "2021",
+        "day": "14th",
         "sunrise": 1620304513,
         "sunset": 1620353721,
         "moonrise": 1620296280,
@@ -1576,6 +1591,9 @@
       },
       {
         "dt": "Saturday",
+        "month": "May",
+        "year": "2021",
+        "day": "15th",
         "sunrise": 1620390861,
         "sunset": 1620440167,
         "moonrise": 1620384360,
@@ -1615,6 +1633,9 @@
       },
       {
         "dt": "Sunday",
+        "month": "May",
+        "year": "2021",
+        "day": "16th",
         "sunrise": 1620477210,
         "sunset": 1620526614,
         "moonrise": 1620472320,
@@ -1654,6 +1675,9 @@
       },
       {
         "dt": "Monday",
+        "month": "May",
+        "year": "2021",
+        "day": "17th",
         "sunrise": 1620563560,
         "sunset": 1620613060,
         "moonrise": 1620560280,
