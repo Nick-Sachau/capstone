@@ -15,6 +15,8 @@ const OtherDays = ({ day, id, currDay, onClick:getherInformation }) => {
 
     let days = ['SUN', 'MON', 'TUE', 'WED', 'THURS', 'FRI', 'SAT'];
 
+    
+
     // useState(this.dt)
     
     return (
