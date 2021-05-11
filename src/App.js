@@ -32,7 +32,8 @@ function App() {
     // console.log(currDay)
     for(const i in data.daily){
       if(data.daily[i].dt == currDay){
-        console.log(data.daily[i])
+        // console.log(data.daily[i])
+        
       }
     }
   }
