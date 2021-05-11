@@ -9,7 +9,7 @@ import { AiFillCaretUp } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
 
 
-const CurrentDay = ({ day, month, year, date }) => {
+const CurrentDay = ({  }) => {
 
     const [open, setOpen] = useState(false)
 

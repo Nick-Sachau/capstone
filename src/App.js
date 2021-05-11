@@ -12,8 +12,6 @@ let data = Weather
 //   data.daily[day].dt = Date(data.daily[day].dt)
 // }
 
-let key = 0;
-
 function App() {
   const now = new Date();
   const date = now.getDate();
@@ -22,6 +20,7 @@ function App() {
   let day = now.getDay();
   let days = ['SUN', 'MON', 'TUE', 'WED', 'THURS', 'FRI', 'SAT'];
   const year = now.getFullYear();
+  const nDate = day
 
   for(const i in days) {
       if(day == i) {
@@ -41,10 +40,12 @@ function App() {
     
   }
 
-  console.log(day)
+  const startDateIndex = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+  let dayArray = []
 
-  // updateJumbo();
-  // <updateJumbo />
+  for(let i = nDate; i < nDate+8; i++) {
+    dayArray.push(startDateIndex[i-1])
+  }
 
   return (
     <>
@@ -52,9 +53,8 @@ function App() {
       <CurrentDay date={date} day={day} month={month} year={year}/>
       <Container className="nextDaysRow"> 
         {
-          data.daily.map((day) => (
-            key++,
-            <OtherDays day={day} key={key}/>
+          data.daily.map((day, index) => (
+            <OtherDays currDay={dayArray[index]} day={day} key={index} id={index}/>
           ))
         }
       </Container>
