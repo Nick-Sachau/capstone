@@ -18,7 +18,7 @@ const OtherDays = ({ day, id, currDay}) => {
     // useState(this.dt)
     
     return (
-        <Container className="nextDays" onClick={() => {}}>
+        <Container className="nextDays" onClick={() => {console.log()}}>
             <div className="top">
                 <div className="Time">{currDay}</div>
                 <div className="icon"><img src={"http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png"} alt="weather icon"/></div>

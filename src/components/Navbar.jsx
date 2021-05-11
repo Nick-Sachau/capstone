@@ -9,7 +9,7 @@ const Navbar = () => {
                 <GiStripedSun className="Logo" />
                 <h2 className="siteName">Placeholder Name</h2>
                 </div>
-                <input type="search" name="Search" id="" placeholder="Search City, ZIP, or Location"/> 
+                <input type="search" name="Search" id="" placeholder="Search Location"/> 
             </ul>
         </nav>
     )
