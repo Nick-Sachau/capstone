@@ -34,3 +34,5 @@ const OtherDays = ({ day, id, currDay, onClick:getherInformation }) => {
 }
 
 export default OtherDays
+
+

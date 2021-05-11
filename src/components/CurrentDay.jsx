@@ -56,3 +56,6 @@ const CurrentDay = ({ information }) => {
 }
 
 export default CurrentDay
+
+
+//im gay
