@@ -9,7 +9,9 @@ import { AiFillCaretUp } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
 
 
-const CurrentDay = ({  }) => {
+const CurrentDay = ({ information }) => {
+
+    console.log(information)
 
     const [open, setOpen] = useState(false)
 
@@ -18,14 +20,14 @@ const CurrentDay = ({  }) => {
             <Jumbotron>
                 <div className="details">
                     <div className="date">
-                        <div className="day"></div>
-                        <div className="weekDay"></div>
-                        <div className="year"></div>
+                        <div className="day">{information.dt}</div>
+                        <div className="weekDay">{information.month} {information.day}</div>
+                        <div className="year">{information.year}</div>
                     </div>
                     <div className="weather">
-                        <div className="temp"><WiDegrees className="deg" /></div>
+                        <div className="temp">{Math.round(information.temp.day)}<WiDegrees className="deg" /></div>
                         <div className="weather"><img className="icon" src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"/> </div>
-                        <div className="humidity">Humidity: {}%</div>
+                        <div className="humidity">Humidity: {information.humidity}%</div>
                     </div>
                 </div>
                 <div className="content">
@@ -35,7 +37,7 @@ const CurrentDay = ({  }) => {
             </Jumbotron>
             <Collapse in={open}>
                     <div id="collapse-text">
-                        
+                        This is filler text, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad placeat nostrum reiciendis optio aliquam culpa sequi maiores veritatis aperiam reprehenderit impedit dolores corrupti distinctio, error molestias amet provident enim labore?
                         <br></br>
                         <br></br>
                         

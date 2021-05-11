@@ -207,7 +207,7 @@
 
 #root .jumbotron .details .date {
   font-size: 1.9rem;
-  font-weight: 600;
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,6 +222,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+#root .jumbotron .details .date .day {
+  font-weight: 900;
 }
 
 #root .jumbotron .details .weather {
@@ -273,6 +277,7 @@
   margin-top: 5rem;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 5vh;
 }
 
 #root .nextDaysRow .nextDays {
@@ -329,4 +334,3 @@
   -webkit-transform: scale(3);
           transform: scale(3);
 }
-/*# sourceMappingURL=style.css.map */

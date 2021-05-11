@@ -4,7 +4,7 @@ import { WiDegrees } from 'react-icons/wi'
 import React, { useState } from 'react'
 
 
-const OtherDays = ({ day, id, currDay, onClick}) => {
+const OtherDays = ({ day, id, currDay, onClick:getherInformation }) => {
     
 
     const [test, setTest] = useState('')
@@ -20,11 +20,7 @@ const OtherDays = ({ day, id, currDay, onClick}) => {
     // useState(this.dt)
     
     return (
-<<<<<<< HEAD
-        <Container className="nextDays" onClick={() => {console.log()}}>
-=======
-        <Container className="nextDays" onClick={() => {onClick(currDay)}}>
->>>>>>> main
+        <Container className="nextDays" onClick={() => {getherInformation(currDay)}}>
             <div className="top">
                 <div className="Time">{currDay}</div>
                 <div className="icon"><img src={"http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png"} alt="weather icon"/></div>
@@ -36,7 +32,5 @@ const OtherDays = ({ day, id, currDay, onClick}) => {
         </Container>
     )
 }
-
-
 
 export default OtherDays

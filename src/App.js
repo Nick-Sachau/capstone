@@ -43,12 +43,6 @@ function App() {
       }
   }
 
-  const [jumbotron, setJumbotron] = useState('')
-
-  const activeDay = () => {
-    
-  }
-
   const startDateIndex = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
   let dayArray = []
 
@@ -56,14 +50,32 @@ function App() {
     dayArray.push(startDateIndex[i-1])
   }
 
+  const getherInformation = (dateDay) => {
+    for(const i in data.daily) {
+      if(data.daily[i].dt == dateDay) {
+        setDateObj(data.daily[i])
+      }
+    }
+  }
+
+  const getStartingDate = (currDate) => {
+    for(const i in data.daily) {
+      if(data.daily[i].dt == currDate) {
+        return(data.daily[i])
+      }
+    }
+  }
+
+  const [dateObj, setDateObj] = useState(getStartingDate(dayArray[0]))
+
   return (
     <>
       <Navbar />
-      <CurrentDay date={date} day={day} month={month} year={year}/>
+      <CurrentDay information={dateObj} date={date} day={day} month={month} year={year}/>
       <Container className="nextDaysRow"> 
         {
           data.daily.map((day, index) => (
-            <OtherDays currDay={dayArray[index]} day={day} key={index} id={index} onClick={gatherInfo}/>
+            <OtherDays onClick={getherInformation} currDay={dayArray[index]} day={day} key={index}/>
           ))
         }
       </Container>
