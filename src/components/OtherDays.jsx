@@ -31,4 +31,6 @@ const OtherDays = ({ day, id, currDay}) => {
     )
 }
 
+
+
 export default OtherDays

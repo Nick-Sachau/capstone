@@ -12,4 +12,6 @@ ______________________________________________________________________________
 
 5/6: got all the thmes to work, nick made the arrays work great with all of it, david worked on the animation, and adrian made our boxes look like a professional site
 
-5/7: 
+5/7: we all try to figure out how to push the thing up
+
+5/10: need to name the others days better so we can update jumbo... but... -_-  its not working. it makes me mad
