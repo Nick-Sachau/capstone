@@ -28,6 +28,15 @@ function App() {
       }
   }
 
+  const gatherInfo = (currDay) => {
+    // console.log(currDay)
+    for(const i in data.daily){
+      if(data.daily[i].dt == currDay){
+        console.log(data.daily[i])
+      }
+    }
+  }
+
   for(const i in months) {
       if(month == i) {
           month = months[i]
@@ -54,7 +63,7 @@ function App() {
       <Container className="nextDaysRow"> 
         {
           data.daily.map((day, index) => (
-            <OtherDays currDay={dayArray[index]} day={day} key={index} id={index}/>
+            <OtherDays currDay={dayArray[index]} day={day} key={index} id={index} onClick={gatherInfo}/>
           ))
         }
       </Container>
