@@ -9,9 +9,10 @@ import { AiFillCaretUp } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
 
 
-const CurrentDay = ({}) => {
+const CurrentDay = ({ information }) => {
 
-    // const [active, setActive] = useState(false)
+    console.log(information)
+
     const [open, setOpen] = useState(false)
 
     return (
@@ -19,9 +20,9 @@ const CurrentDay = ({}) => {
             <Jumbotron>
                 <div className="details">
                     <div className="date">
-                        <div className="day">{info.dt}</div>
-                        <div className="weekDay"></div>
-                        <div className="year"></div>
+                        <div className="day">{information.dt}</div>
+                        <div className="weekDay">{information.month} {information.day}</div>
+                        <div className="year">{information.year}</div>
                     </div>
                     <div className="weather">
                         <div className="temp">{Math.round(information.temp.day)}<WiDegrees className="deg" /></div>
