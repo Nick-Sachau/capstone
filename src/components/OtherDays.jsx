@@ -1,23 +1,9 @@
 import { Container } from 'react-bootstrap'
-import Weather from '../weather.json'
 import { WiDegrees } from 'react-icons/wi'
-import React, { useState } from 'react'
+import React from 'react'
 
 
-const OtherDays = ({ day, id, currDay, onClick:getherInformation }) => {
-    
-
-    const [test, setTest] = useState('')
-
-    const date = () => {
-        let nowDate = Date(Number(day.dt))
-    }
-
-    let days = ['SUN', 'MON', 'TUE', 'WED', 'THURS', 'FRI', 'SAT'];
-
-    
-
-    // useState(this.dt)
+const OtherDays = ({ day, currDay, onClick:getherInformation }) => {
     
     return (
         <Container className="nextDays" onClick={() => {getherInformation(currDay)}}>

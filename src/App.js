@@ -4,15 +4,14 @@ import React, { useState } from 'react'
 import CurrentDay from './components/CurrentDay';
 import Navbar from './components/Navbar';
 import OtherDays from './components/OtherDays';
-import { Container } from 'react-bootstrap'
-import Weather from './weather.json'
+import { Container } from 'react-bootstrap';
+import data from './weather.json';
 
-let data = Weather
-// for(const day in data.daily){
-//   data.daily[day].dt = Date(data.daily[day].dt)
-// }
+
 
 function App() {
+  // api call https://api.openweathermap.org/data/2.5/onecall?lat=33.629250&lon=-112.173780&exclude=alerts&dt=1620789896762&appid=a8504f8f789748ee810037256e9a203a&units=imperial
+
   const now = new Date();
   const date = now.getDate();
   let month = now.getMonth();
@@ -26,16 +25,6 @@ function App() {
       if(day == i) {
           day = days[i]
       }
-  }
-
-  const gatherInfo = (currDay) => {
-    // console.log(currDay)
-    for(const i in data.daily){
-      if(data.daily[i].dt == currDay){
-        // console.log(data.daily[i])
-        
-      }
-    }
   }
 
   for(const i in months) {
@@ -55,6 +44,7 @@ function App() {
     for(const i in data.daily) {
       if(data.daily[i].dt == dateDay) {
         setDateObj(data.daily[i])
+        break;
       }
     }
   }
@@ -69,19 +59,29 @@ function App() {
 
   const [dateObj, setDateObj] = useState(getStartingDate(dayArray[0]))
 
+  if(data) {
+
+    return (
+      <>
+        <Navbar />
+        <CurrentDay information={dateObj} date={date} day={day} month={month} year={year}/>
+        <Container className="nextDaysRow"> 
+          {
+            data.daily.map((day, index) => (
+              <OtherDays onClick={getherInformation} currDay={dayArray[index]} day={day} key={index}/>
+            ))
+          }
+        </Container>
+      </>
+    );
+  }
+
   return (
     <>
-      <Navbar />
-      <CurrentDay information={dateObj} date={date} day={day} month={month} year={year}/>
-      <Container className="nextDaysRow"> 
-        {
-          data.daily.map((day, index) => (
-            <OtherDays onClick={getherInformation} currDay={dayArray[index]} day={day} key={index}/>
-          ))
-        }
-      </Container>
+
     </>
-  );
+  )
 }
+  
 
 export default App;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Collapse } from 'react-bootstrap';
-import weather from '../weather.json'
 import { WiDegrees } from 'react-icons/wi'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 // import Dropdown from 'react-bootstrap/Dropdown'
@@ -10,8 +9,6 @@ import { Button } from 'react-bootstrap'
 
 
 const CurrentDay = ({ information }) => {
-
-    console.log(information)
 
     const [open, setOpen] = useState(false)
 
