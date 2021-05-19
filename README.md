@@ -57,3 +57,20 @@ david: some styling and readme
 adrian: portfolio
 
 
+5/17
+
+nick: not here
+david: portfolio
+adrain: not here
+
+5/18
+
+nick: not here
+david: played a bit with some things, didnt change the project much, just a few test that i got rid of later on
+adrian: portfolio
+
+5/19
+
+nick: not here
+david: worked on jumbo
+adrain: made the jumbo look pretty
