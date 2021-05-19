@@ -22,13 +22,31 @@ const CurrentDay = ({ information }) => {
                         <div className="year">{information.year}</div>
                     </div>
                     <div className="weather">
-                        <div className="temp">{Math.round(information.temp.day)}<WiDegrees className="deg" /></div>
-                        <div className="weather"><img className="icon" src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon" /> </div>
+                        <div className="temp"><p id="hightemp">{Math.round(information.temp.max)} </p>/<p id="lowtemp">{Math.round(information.temp.min)}</p></div>
+                        <div className="weather">{information.weather[0].description}<img className="icon" src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon"/> </div>
                         <div className="humidity">Humidity: {information.humidity}%</div>
                     </div>
                 </div>
                 <div className="content">
-                    <p>This is filler content. Deserunt magna pariatur non nulla culpa qui irure elit aliqua mollit voluptate nulla officia fugiat. Non esse irure ad aute cupidatat officia ad sint quis aliqua pariatur quis dolore. Sunt velit veniam consectetur labore consequat laboris.</p>
+                    <div className="through-day">
+                    <ul>
+                        <h4><strong>Throughout the Day⠀</strong></h4>
+                        <li>Morning: {Math.round(information.temp.morn)}<WiDegrees className="deg" /></li>
+                        <li>Noon: {Math.round(information.temp.day)}<WiDegrees className="deg" /></li>
+                        <li>Evening: {Math.round(information.temp.eve)}<WiDegrees className="deg" /></li>
+                        <li>Night: {Math.round(information.temp.night)}<WiDegrees className="deg" /></li>
+                    </ul>
+                    </div>
+                   
+                    <div className="feels-like">
+                    <ul>
+                        <h4><strong>Feels Like⠀</strong></h4>
+                        <li>Morning: {Math.round(information.feels_like.morn)}<WiDegrees className="deg" /></li>
+                        <li>Noon: {Math.round(information.feels_like.day)}<WiDegrees className="deg" /></li>
+                        <li>Evening: {Math.round(information.feels_like.eve)}<WiDegrees className="deg" /></li>
+                        <li>Night: {Math.round(information.feels_like.night)}<WiDegrees className="deg" /></li>
+                    </ul>
+                    </div>
                 </div>
 
             </Jumbotron>
@@ -53,6 +71,3 @@ const CurrentDay = ({ information }) => {
 }
 
 export default CurrentDay
-
-
-//im gay

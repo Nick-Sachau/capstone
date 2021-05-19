@@ -20,5 +20,3 @@ const OtherDays = ({ day, currDay, onClick:getherInformation }) => {
 }
 
 export default OtherDays
-
-

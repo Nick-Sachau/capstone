@@ -125,10 +125,6 @@
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
 }
 
-#root .jumbotron p {
-  margin-bottom: 0;
-}
-
 #root .jumbotron .details {
   width: 40%;
   display: flex;
@@ -169,50 +165,12 @@
   margin-left: -1rem;
 }
 
-#root .jumbotron .details .weather .weather {
-  padding-left: 8px;
-}
-
 #root .jumbotron .details .weather .weather img {
   width: 2rem;
 }
 
-#root .jumbotron .details #hightemp {
-  margin-bottom: 8px;
-  font-weight: 700;
-}
-
-#root .jumbotron .details #lowtemp {
-  font-size: 1.3rem;
-  margin-bottom: 5px;
-}
-
 #root .jumbotron .content {
-  display: flex;
   width: 50%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#root .jumbotron .content li {
-  font-size: 1.2rem;
-}
-
-#root .jumbotron .content .through-day {
-  text-align: center;
-}
-
-#root .jumbotron .content .through-day ul {
-  list-style-type: none;
-}
-
-#root .jumbotron .content .feels-like {
-  text-align: center;
-}
-
-#root .jumbotron .content .feels-like ul {
-  list-style-type: none;
 }
 
 #root .nextDaysRow {
