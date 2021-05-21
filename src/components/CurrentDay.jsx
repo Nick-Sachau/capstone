@@ -56,7 +56,7 @@ const CurrentDay = ({ information }) => {
             <Collapse in={open}>
                 <div id="collapse-text">
                     <br></br>
-                    <div className="collapse-wrap">
+                    <div id="dropdownwrap">
                         <ul>
                             <div className="arrow">
                                 <h4>Wind</h4>
@@ -70,9 +70,7 @@ const CurrentDay = ({ information }) => {
                             </div>
                             
                         </ul>
-                        <ul>
-                            <li>moon phase: {information.moon_phase}</li>
-                        </ul>
+                    
                     </div>
                         
                     

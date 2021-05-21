@@ -87,6 +87,7 @@
         }
     
         #collapse-text{
+            display: hidden;
             font-family: "Raleway", sans-serif;
             width: 65%;
             background-color: rgba(255, 255, 255, 0.15);
@@ -281,7 +282,7 @@
     }
 }
 
-@media screen and (min-width: 751px) {
+@media (min-width: 751px) {
     
 
 #root {
@@ -385,11 +386,10 @@
                 font-size: 4rem;
             }
         }
-        div.collapse-wrap{
+        div#dropdownwrap{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            
         }
         div.list{
             margin-left: 20px;
