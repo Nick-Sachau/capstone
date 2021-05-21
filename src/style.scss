@@ -9,13 +9,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 
 #root {
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom left,rgba(0, 147, 245, 0.76), rgba(36, 165, 250, 0.76), rgba(149, 213, 255, 0.76));
+    background-image: linear-gradient(to bottom left,rgba(61, 178, 255, 0.76), rgba(7, 152, 248, 0.76), rgba(149, 213, 255, 0.76));
 
     :focus::placeholder {
         color: transparent;
@@ -34,6 +34,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 0;
 
             img {
                 width: 100px;
@@ -60,6 +61,7 @@
                     background-color: rgba(255, 255, 255, 0.07);
                 }
             }
+            
 
             .left{
                 display:flex;
@@ -82,6 +84,8 @@
     }
 
     #collapse-text{
+        border-top: 1px solid rgba(255, 255, 255, 0.26);
+        
         font-family: "Raleway", sans-serif;
         width: 65%;
         background-color: rgba(255, 255, 255, 0.15);
@@ -89,6 +93,48 @@
         padding-left: 2vw;
         padding-right: 2vw;
         text-align: center;
+        
+        h4{
+            font-weight: 800;
+            font-size: 1.4rem;
+            padding: 0;
+            margin: 0;
+        }
+        div.arrow{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            #arrow-icon{
+                font-size: 4rem;
+            }
+        }
+        div.collapse-wrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+        }
+        div.list{
+            margin-left: 20px;
+        }
+        ul{
+            
+            display: flex;
+            flex-direction: row;
+           
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        li{
+            font-size: 1.1rem;
+            text-align: center;
+        }
     }
 
     .collapseButton{
@@ -116,8 +162,9 @@
         width: 65%;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        margin-top: 2vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -204,6 +251,7 @@
             }
         }
     }
+
 
     .nextDaysRow {
         width: 100vw;

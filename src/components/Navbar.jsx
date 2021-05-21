@@ -7,7 +7,7 @@ const Navbar = () => {
             <ul className="navbar">
                 <div className="left">
                 <GiStripedSun className="Logo" />
-                <h2 className="siteName">Placeholder Name</h2>
+                <h2 className="siteName">CapStone Weather</h2>
                 </div>
                 <input type="search" name="Search" id="" placeholder="Search Location"/> 
             </ul>

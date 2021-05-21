@@ -8,13 +8,13 @@
 }
 
 #root {
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom left, rgba(0, 147, 245, 0.76), rgba(36, 165, 250, 0.76), rgba(149, 213, 255, 0.76));
+  background-image: linear-gradient(to bottom left, rgba(61, 178, 255, 0.76), rgba(7, 152, 248, 0.76), rgba(149, 213, 255, 0.76));
 }
 
 #root :focus::placeholder {
@@ -34,6 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0;
 }
 
 #root nav .navbar img {
@@ -81,12 +82,59 @@
 }
 
 #root #collapse-text {
+  border-top: 1px solid rgba(255, 255, 255, 0.26);
   font-family: "Raleway", sans-serif;
   width: 65%;
   background-color: rgba(255, 255, 255, 0.15);
   user-select: none;
   padding-left: 2vw;
   padding-right: 2vw;
+  text-align: center;
+}
+
+#root #collapse-text h4 {
+  font-weight: 800;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+#root #collapse-text div.arrow {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+#root #collapse-text div.arrow #arrow-icon {
+  font-size: 4rem;
+}
+
+#root #collapse-text div.collapse-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#root #collapse-text div.list {
+  margin-left: 20px;
+}
+
+#root #collapse-text ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#root #collapse-text ul div {
+  display: flex;
+  flex-direction: column;
+}
+
+#root #collapse-text li {
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -114,8 +162,9 @@
   width: 65%;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  margin-top: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;

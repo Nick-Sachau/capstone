@@ -6,6 +6,9 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import { AiFillCaretDown } from 'react-icons/ai'
 import { AiFillCaretUp } from 'react-icons/ai'
 import { Button } from 'react-bootstrap'
+import { ImArrowUpLeft2 } from 'react-icons/im'
+import { ImArrowUp2 } from 'react-icons/im'
+import { ImArrowUpRight2 } from 'react-icons/im'
 
 
 const CurrentDay = ({ information }) => {
@@ -52,9 +55,27 @@ const CurrentDay = ({ information }) => {
             </Jumbotron>
             <Collapse in={open}>
                 <div id="collapse-text">
-                    This is filler text, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad placeat nostrum reiciendis optio aliquam culpa sequi maiores veritatis aperiam reprehenderit impedit dolores corrupti distinctio, error molestias amet provident enim labore?
-                        <br></br>
                     <br></br>
+                    <div className="collapse-wrap">
+                        <ul>
+                            <div className="arrow">
+                                <h4>Wind</h4>
+                                {information.wind_deg <= 225 ? <ImArrowUpLeft2 id="arrow-icon" /> : information.wind_deg > 225 && information.wind_deg <= 250 ? <ImArrowUp2 id="arrow-icon" /> : information.wind_deg > 250 ? <ImArrowUpRight2 id="arrow-icon"/> : ""}
+                            </div>
+                            
+                            <div className="list">
+                                <li>Speed: {information.wind_speed}</li>
+                                <li>Gust: {information.wind_gust}</li>
+                                <li>Degrees: {information.wind_deg}</li>
+                            </div>
+                            
+                        </ul>
+                        <ul>
+                            <li>moon phase: {information.moon_phase}</li>
+                        </ul>
+                    </div>
+                        
+                    
 
                 </div>
 
