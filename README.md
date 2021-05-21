@@ -8,7 +8,7 @@ ______________________________________________________________________________
 
 nick: i pushed the base files to the repo i made
 david: i worked with Adrian to make the overall layout of our site
-adrian: i worked with david and worked ont e mockup too
+adrian: i worked with david and worked on the mockup too
 
 5/5
 
@@ -74,3 +74,15 @@ adrian: portfolio
 nick: not here
 david: worked on jumbo
 adrain: made the jumbo look pretty
+
+5/20
+
+nick: not here
+david: added features to the dropdown
+adrian: added even more features to the dropdown
+
+5/21
+
+nick: not here
+david: made it responsive
+adrian: portfolio and responsive
